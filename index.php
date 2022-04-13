@@ -76,12 +76,17 @@
 		      			else if (isset($_REQUEST['logout'])===true) {
 		      				echo"<div class = 'alert alert-info' role='alert'> Thank you...</div>";
 		      			}
+		      			      					
+		      			else if (isset($_REQUEST['logout'])===true) {
+		      				echo"<div class = 'alert alert-info' role='alert'> Thank you...</div>";
+		      			}
 		      			else if (isset($_REQUEST['logfirst'])===true) {
 		      				echo"<div class = 'alert alert-info' role='alert'>Please Login first...</div>";	      				
 		      			}
 		      			else if (isset($_SESSION['ses_username'])==true) {
 		      					echo"<div class= 'alert alert-warning' role='alert'> You are still logged in. Please <a href = 'account.php'>click here</a> to proceed.</div>";	      					
 		      			}
+		      			
 		      			?>
 		      			
 		      			<input type="text" class="form-control rounded-left" placeholder="Username" name = "form_username" required>
